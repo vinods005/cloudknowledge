@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER vinodshinde
 RUN yum install https \
 unzip \
-zip \
+zip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page267/yooga.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip yooga.zip
