@@ -1,12 +1,12 @@
 FROM centos:latest
-MAINTAINER vinodmshinde@hotmail.com
+MAINTAINER vinodshinde
 RUN yum install -y httpd \
   zip \
- unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ unzip
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page15/red-haze.zip /var/www/html
 WORKDIR /var/www/html
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip 
+RUN unzip red-haze.zip
+RUN cp -rvf red-haze/* .
+RUN rm -rf red-haze red-haze.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
