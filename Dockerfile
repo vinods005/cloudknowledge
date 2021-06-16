@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER vinodshinde
-RUN yum install https \
+RUN yum install -y httpd \
 unzip \
 zip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page267/yooga.zip /var/www/html/
